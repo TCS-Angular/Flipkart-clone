@@ -9,6 +9,7 @@ import { CartService } from 'src/app/service/cart.service';
 })
 export class ProductsComponent implements OnInit {
   public productList: any;
+  searchKey:string = "";
   constructor(private api: ApiService, private cartService: CartService){ }
 
   ngOnInit(): void {
