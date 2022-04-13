@@ -6,6 +6,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProductsComponent } from './components/products/products.component';
 import {HttpClientModule} from "@angular/common/http"
 import { AppRoutingModule } from './app-routing.module';
+import { FilterPipe } from './shared/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
     CartComponent,
     ProductsComponent,
     HeaderComponent,
+    FilterPipe,
 
   ],
   imports: [
