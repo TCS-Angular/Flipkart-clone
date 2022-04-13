@@ -20,6 +20,9 @@ export class ProductsComponent implements OnInit {
         Object.assign(a,{quantity:1, total:a.price})
       })
     })
+    this.cartService.search.subscribe((val: any) => {
+      this.searchKey = val;
+    })
   }
   addtocart(item :any) {
     this.cartService.addtoCart(item)
